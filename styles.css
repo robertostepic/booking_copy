@@ -1,0 +1,159 @@
+/* Reset some default browser styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the basic font and line height for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Container class to center the content and set a width */
+.container {
+    width: 80%;
+    margin:auto;
+    overflow: hidden; /* Clear floats */
+}
+
+/* Header styling */
+header {
+    background: #4CAF50; /* Green background */
+    color: #fff; /* White text color */
+    padding-top: 30px; /* Padding at the top */
+    min-height: 70px; /* Minimum height */
+    border-bottom: #3e8e41 3px solid; /* Bottom border */
+}
+
+/* Header title styling */
+header h1 {
+    float: left; /* Float the heading to the left */
+    margin-top: 0; /* Remove the top margin */
+}
+
+/* Navigation styling */
+header nav {
+    float: right; /* Float the navigation to the right */
+    margin-top: 10px; /* Margin at the top */
+}
+
+/* Unordered list in the navigation */
+header nav ul {
+    list-style: none; /* Remove list styling */
+}
+
+/* List items in the navigation */
+header nav ul li {
+    display: inline; /* Display the list items inline */
+    margin-left: 20px; /* Margin on the left */
+}
+
+/* Link styling in the navigation */
+header nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold font weight */
+}
+
+/* Search section styling */
+.search {
+    padding: 30px 0; /* Padding top and bottom */
+    background: #f4f4f4; /* Light gray background */
+}
+
+/* Search section title */
+.search h2 {
+    margin-bottom: 20px; /* Margin at the bottom */
+}
+
+/* Search Form styling */
+.search form {
+    display: flex; /* Display the form as a flex container */
+    justify-content: center; /* Center the form */	
+    align-items: center; /* Center the items vertically */
+}
+
+/* Text input in the search form */
+.search form input[type="text"],
+.search form input[type="date"] {
+    padding: 10px; /* Padding inside the input */
+    margin-right: 10px; /* Margin on the right */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Search button */
+.search form button {
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove the border */
+    background: #4CAF50; /* Green background */
+    color: #fff; /* White text color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Add a pointer cursor */
+}
+
+/* Featured section styling */
+.featured {
+    padding: 30px 0; /* Padding top and bottom */
+    background: #fff; /* White background */
+}
+
+/* Featured section title */
+.featured h2 {
+    margin-bottom: 20px; /* Margin at the bottom */
+    text-align: center; /* Center the text */
+}
+
+/* Destinations container */
+.destinations {
+    display: flex; /* Display the destinations as a flex container */
+    justify-content: space-around; /* Space around items */
+}
+
+/* Individual destination styling */
+.destination {
+    text-align: center; /* Center text */
+}
+
+/* Destination image styling */
+.destination img {
+    width: 100%; /* Full width */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Footer styling */
+footer {
+    padding: 20px 0; /* Padding top and bottom */
+    background: #4CAF50; /* Green background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center text */
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Increase width on smaller screens */
+    }
+
+    header nav ul li {
+        display: block; /* Display the list items as blocks */
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Add bottom margin */
+    }
+
+    .search form {
+        flex-direction: column; /* Change the direction to column */
+    }
+
+    .search form input[type="text"],
+    .search form input[type="date"] {
+        margin-right: 0; /* Remove the margin on the right */
+        margin-bottom: 10px; /* Margin at the bottom */
+    }
+
+    .destination {
+        margin-bottom: 20px; /* Add bottom margin */
+    }
+}
